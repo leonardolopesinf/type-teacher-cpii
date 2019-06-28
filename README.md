@@ -2,7 +2,7 @@
 
 ## Descrição:
 
-### TypeTeacher será um repositório ao qual visará ensinar TypeScript.
+### TypeTeacher será um projeto ao qual visará ensinar TypeScript.
 
 ### Será desenvolvido por alunos do 2º e 3º ano do Ensino Médio Integrado Desenvolvimento de Sistemas.
 
