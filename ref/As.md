@@ -1,6 +1,6 @@
 # Palavra-chave "*AS*"
 ### Quando você trabalha com o TypeScript, a *as*, palavra-chave, está dizendo apenas ao verificador de tipos para fingir que algo tem um tipo diferente. Você pode pensar nas anotações de tipo como uma camada meta separada sobre o código real.
-### Ele trabalha como o <algo> , como exemplo :
+### Ele trabalha como o \<algo\> , como exemplo :
 ```
 var circle = <Circle> createShape("circle");
 ```
