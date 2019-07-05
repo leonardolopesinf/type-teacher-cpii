@@ -1,39 +1,29 @@
 # Enum
-Tipo de dado que não existe no JavaScript puro, mas foi adicionado ao TypeScript por ser um objeto com a chave dos elementos definida de forma mais complacente. O enum (enumeração) é para trabalhar com listas e trabalha com 0. ----> Aprofundar I
+Tipo de dado que não existe no JavaScript puro, mas foi adicionado ao TypeScript por ser um objeto com a chave dos elementos definida de forma mais complacente. O enum (enumeração) é para trabalhar com listas.
+
+Os enums numéricos são auto increment. Por padrão, o valor 0 é atribuido ao primeiro registro e incremental para os próximos. 
 
 ```
- enum Color {Purple, Pink, Black}; 
+enum Color{
+Purple,//[0]
+Pink,//[1]
+Black//[2]
+}
+var cor= Color[1]; // pink
 
- var a: Color = Color.Pink;
+```
 
- console.log(a); //Retorna 1 ----> Aprofundar II / Erro III
+
+O objeto Color guarda os dados, tanto no indice 1 com o valor igual a Pink, quanto na propriedade Pink com o valor igual a 1
 
  ```
-
-Se quiser, também tem a possibilidade de indicar um valor inicial 
-
-```
- enum Color {Purple=1, Pink, Black};
-
- var a: Color = Color.Pink;
-
- console.log(a); //Retorna 2 -----> Aprofundar III / Erro III
-
-```
-
-O objeto Color guarda os dados, tanto no indice 2 com o valor igual a Pink, quanto na propriedade Pink com o valor igual a 2
-
-``` 
- enum Color {Purple=1, Pink, Black};
-
- var number: Color  = Color.Pink;
- 
- var name:  string = Color[2] ;  -----> Erro I
-
- console.log(number);  //vai retornar 2 ----> Erro III
-
- console.log(name); //vai retornar Pink ----> Erro II / Erro III
-
- //vai retornar 2 e Pink respectivamente 
+enum Color{
+Purple,
+Pink,
+Black
+}
+var cor:any = Color[1]; // pink
+var corNumero = Color[cor]; // 1
+var corString= Color["Pink"];//1
 
  ```
