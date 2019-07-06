@@ -8,4 +8,4 @@ var T = <U> createShape("circle");
 ```
 var T = createShape("circle") as U ; 
 ```
-### A diferença é que (as Circle) funciona em arquivos TSX, mas <Circle> entra em conflito com a sintaxe JSX. as foi introduzido por este motivo.Logo "As" é a sintaxe mais recomendada pra essa função.
+### A diferença é que (as U) funciona em arquivos TSX, mas <U> entra em conflito com a sintaxe JSX. as foi introduzido por este motivo.Logo "As" é a sintaxe mais recomendada pra essa função.
