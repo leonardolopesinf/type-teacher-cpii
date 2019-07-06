@@ -36,7 +36,7 @@ Obs: Cada componente de uma determinada Intersection Type pode ser qualquer tipo
 
 ### Intersecções de Tipos de Objetos
  
-Ao criarmos uma interseção de tipos de objetos, ela mescla todas as características (propriedades) simultaneamente. Por exemplo, se criarmos uma interseção de dois objetos de diferentes conjuntos de propriedade, o resultado seria um objetoque mescla todas as propriedades dos dois objetos implementados.
+Ao criarmos uma interseção de tipos de objetos, ela mescla todas as características (propriedades) simultaneamente. Por exemplo, se criarmos uma interseção de dois objetos de diferentes conjuntos de propriedade, o resultado seria um objeto que mescla todas as propriedades dos dois objetos implementados.
 
 
     type A = { x: number };
