@@ -43,15 +43,15 @@ No final, aperte o "enter" para confirmar todos os dados.
 
 # Instalação do TypeScript
 
-Iremos instalar o TypeScript usando o NPM e seguindo os seguintes passos:
-
-
-1- Abra uma janela do prompt de comando 
-2- Digite o comando:
+A primeira coisa a ser fazer após o ambiente node ser iniciado, é instalar o TypeScript em modo global. Para fazer isso, iremos usar o seguinte comando:
 
 ```
- npm install -g typescript.
+npm install -g typescript
 ```
+
+
+Depois disso, você pode  executar ele de qualquer diretório do seu compuatdor.
+
 
 # Configuração do tsconfig.json
 
