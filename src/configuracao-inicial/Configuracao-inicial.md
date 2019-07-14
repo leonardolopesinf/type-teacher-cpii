@@ -1,12 +1,12 @@
  # Iniciação do ambiente Node
 
-Você precisa ter o [Visual Studio Code](https://code.visualstudio.com/download) e o [Node.JS]( https://nodejs.org/en/) instalados em sua maquina.
+Você precisa ter o [Node.JS]( https://nodejs.org/en/) instalados em sua maquina e é recomendado que seja utilizado o [Visual Studio Code](https://code.visualstudio.com/download) por se integrar bem com o TypeScript.
 
 O primeiro passo é criar a pasta que irá armazenar o seu projeto.
 
 >obs: a pasta não pode ter caracteres especiais no nome, ou se chamar "typescript".
 
-Em seguida, abra o **cmd**. Use o comando cd para mudar o diretório  para chegar até sua pasta.
+Em seguida, abra o **cmd**. Use o comando cd para mudar o diretório e chegar até sua pasta.
 
 Ex:
 
@@ -50,7 +50,7 @@ npm install -g typescript
 ```
 
 
-Depois disso, você pode  executar ele de qualquer diretório do seu compuatdor.
+Depois disso, você pode  executar ele de qualquer diretório do seu computador.
 
 
 # Configuração do tsconfig.json
