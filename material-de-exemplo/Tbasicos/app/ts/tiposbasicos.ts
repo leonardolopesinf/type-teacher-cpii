@@ -8,10 +8,10 @@ let algo: any = 4;
 
 // Todos passaremos para string para podermos visualizar-los no index.html
 
-document.write(JSON.stringify(booleano)+'br')
-document.write(JSON.stringify(numero)+'br')
-document.write(JSON.stringify(texto)+'br')
-document.write(JSON.stringify(tuple)+'br')
-document.write(JSON.stringify(n)+'br')
-document.write(JSON.stringify(array)+'br')
-document.write(JSON.stringify(algo)+'br')
+document.write('Boolean --> ' + JSON.stringify(booleano) + '<br>');
+document.write('Number --> ' + JSON.stringify(numero) + '<br>');
+document.write('String --> ' + JSON.stringify(texto) + '<br>');
+document.write('Tuple --> ' + JSON.stringify(tuple) + '<br>');
+document.write('Null --> ' + JSON.stringify(n) + '<br>');
+document.write('Array --> ' + JSON.stringify(array) + '<br>');
+document.write('Any --> ' + JSON.stringify(algo) + '<br>');
