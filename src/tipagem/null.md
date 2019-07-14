@@ -1,5 +1,5 @@
-# Tipo básico null
-### Em TypeScript,  null na verdade têm seus próprios tipo nomeado de null.Muito parecido void, eles não é extremamente útil sozinho:
+# Null
+### Em TypeScript,  null na verdade têm seu próprio tipo nomeado de null. Muito parecido com void, ele não é extremamente útil sozinho:
 ```
 // não há muito mais que possamos atribuir a essas variáveis!
 let n: null = null;

@@ -1,5 +1,5 @@
 # Tipando variáveis
-### Para que os programas sejam úteis, precisamos trabalhar com algumas das unidades de dados mais simples: números, strings, estruturas, valores booleanos e afins. No TypeScript, suportamos praticamente os mesmos tipos que você esperaria em JavaScript, com um tipo de enumeração conveniente para ajudar as coisas
+### Para que os programas sejam úteis, precisamos trabalhar com algumas das unidades de dados mais simples: números, strings, valores booleanos e afins. No TypeScript, suportamos praticamente os mesmos tipos que você esperaria em JavaScript, com um tipo de enumeração conveniente para ajudar as coisas
 ### Para tipar uma variável no typescript precisamos em primeiro lugar declarar a variável (colocar ```var``` ou ```let``` + o nome da variável)
 ```
 let variavel
