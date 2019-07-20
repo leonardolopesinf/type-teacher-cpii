@@ -1,15 +1,13 @@
-# Tipos de Parâmetro
+# Tipando Parâmetros
 
-No geral, parâmetros são tipados para facilitar o desenvolvimento de um determinado programa/software. Parâmetros podem ser tipados como **Rest Parameters (Parâmetros de Descanso)**, **Optional Parameters (Parâmetros Opcionais)** ou **Default Parameters (Parâmetros Padrões)**.
+Dentro de uma função, podemos tipar parâmetros, assim os parâmetros em questão só poderão receber valores correspondentes ao tipo delas (se o parâmetro _x_ for tipado como **number** e o parâmetro _y_ for tipado como **booleano**, consequentemente o parâmetro _x_ só poderá receber valores _number_ e o parâmetro _y_ só poderá receber valores do tipo _booleano_).
 
-### Rest Parameters (Parâmetros de Descanso):
+Para tipar parâmetros de uma função, tudo que precisamos fazer é declarar o(s) parâmetros(s), usarmos dois-pontos e logo após o tipo selecionado para o parâmetro em questão.
 
-Colocando em poucas palavras, os parâmetros de descanso são capazes de acomodar n parâmetros simultaneamente (denotados por reticências).
+Por exemplo:
 
-### Optional Parameters (Parâmetros Opcionais):
+    function Exemplo(x: number, y: bolean)
+    {
+        // restante do código...
+    }
 
-Assim como seu nome diz, os parâmetros opcionais são usados quando um determinado parâmetros não precisa necessariamente receber um valor. Essa funcionalidade pode ser utilizada ao adicionarmos '?' ao final do parâmetro opcional.
-
-### Default Parameters (Parâmetros Padrões):
-
-São parâmetros que já possuem um valor "preestabelecido", consequentemente, podem ser omitidos em suas funções.
