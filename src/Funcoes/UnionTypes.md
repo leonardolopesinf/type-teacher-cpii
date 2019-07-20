@@ -18,13 +18,13 @@ No exemplo acima, o parâmetro _matricula_ pode receber um valor que seja uma **
 
 Union Types podem ser um pouco confusos ou complicados, portanto é necessário atenção. Se um determinado parâmetro possui valor dos tipo **A | B**, só temos total certeza de que esse valor possui características que _A e B possuem em comum_. Por exemplo:
 
-    interface Cachorro 
+    type Cachorro 
     {
         correr();
         latir();
     }
 
-    interface Gato
+    type Gato
     {
         correr();
         miar();
