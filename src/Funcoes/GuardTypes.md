@@ -5,13 +5,13 @@ Os Guard Types são responsáveis por permitir a restrição do tipo de um deter
 ## Exemplo:
 
 
-    interface Cachorro 
+    type Cachorro 
     {
         correr();
         latir();
     }
 
-    interface Gato
+    type Gato
     {
         correr();
         miar();
@@ -23,11 +23,13 @@ Os Guard Types são responsáveis por permitir a restrição do tipo de um deter
     }
 
     let animal1 = getAnimal();
+    
 
     if ((animal1 as Cachorro).latir)
     {
         (animal1 as Cachorro).latir();
     }
+    
     else if ((animal1 as Gato).miar)
     {
         (animal1 as Gato).miar();
