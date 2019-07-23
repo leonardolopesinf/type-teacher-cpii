@@ -2,16 +2,16 @@
 
 Ao tiparmos o retorno de uma função, é o mesmo que dizer ao programa para que ele retorne apenas valores do tipo que pedimos (se nós tiparmos o retorno de uma função x como _number_, consequentemente o retorno daquela função será apenas de valores numéricos - _number_).
 
-Para tiparmos um retorno, usamos uma 'seta gorda' (=>) entre os parâmetros e o tipo de retorno.
+Para tiparmos um retorno, usamos dois pontos (:) entre os parâmetros e o tipo de retorno.
 
 Por exemplo:
 
-    function exemplo(x: number, y:number)
+    function exemplo(x: number, y:number) : number
     {
         return x + y;
     }
 
-    let exemplo1: (x: 7, y: 5) => number 
+    console.log(exemplo(7, 5)) // 12
     
 
 ## Tipos _'Void'_ e _'Never'_:
@@ -22,11 +22,18 @@ Ao usarmos _void_, o parâmetro (ou a função) retorna uma unidade vazia. Já u
 
 Por exemplo:
 
-    function exemplo(x: number, y:number)
+    function exemplo1(x: number, y:number): void
     {
-        return x + y;
+        console.log(x + y)
+        return;
     }
 
-    let exemplo1: void  //exemplo1 retorna uma unidade vazia, porém retorna.
-    let exemplo2: never //nesse caso, o valor nunca retorna.
+    function exemplo2(x: number, y:number): never
+    {
+        console.log(x + y)
+        throw new Error('Esta função não pode retornar valor algum!');
+    }
+
+    exemplo1(1, 10)  //exemplo1 retorna uma unidade vazia, porém retorna.
+    exemplo2(2, 20) //nesse caso, o valor nunca retorna.
 

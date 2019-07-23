@@ -5,35 +5,32 @@ Os Guard Types são responsáveis por permitir a restrição do tipo de um deter
 ## Exemplo:
 
 
-    type Cachorro 
-    {
-        correr();
-        latir();
+    type Cachorro = {
+        corre: 'correndo!',
+        latido: 'au au'
     }
 
-    type Gato
-    {
-        correr();
-        miar();
+    type Gato = {
+        corre: 'correndo!',
+        miado: 'miau!'
     }
 
     function getAnimal(): Cachorro | Gato
-    {
+    {    
         //restante do código...
     }
 
     let animal1 = getAnimal();
-    
 
-    if ((animal1 as Cachorro).latir)
+    if ((animal1 as Cachorro).latido)
     {
-        (animal1 as Cachorro).latir();
-    }
-    
-    else if ((animal1 as Gato).miar)
-    {
-        (animal1 as Gato).miar();
+        console.log((animal1 as Cachorro).latido);
     }
 
+    else if ((animal1 as Gato).miado)
+    {
+        console.log((animal1 as Gato).miado);
+    }
 
-Em outras palavras, para verificarmos a presença de 'latir', precisamos necessariamente nos certificarmos de que _animal_ é um Cachorro; assim como para verificarmos a presença de 'miar', precisamos necessariamente nos certificarmos de que _animal_ é um Gato.
+
+Em outras palavras, para verificarmos a presença de 'latido', precisamos necessariamente nos certificarmos de que _animal_ é um Cachorro; assim como para verificarmos a presença de 'miado', precisamos necessariamente nos certificarmos de que _animal_ é um Gato.

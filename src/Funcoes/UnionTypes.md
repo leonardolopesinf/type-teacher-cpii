@@ -12,7 +12,7 @@ Os Union Types (ou Tipos de União) estão extremamente ligados aos Intersection
         //restante do código...
     }
 
-No exemplo acima, o parâmetro _matricula_ pode receber um valor que seja uma **string** ou **booleano**.
+No exemplo acima, o parâmetro _matricula_ pode receber um valor que seja uma **string** ou **number**.
 
 ### Observação: 
 
@@ -20,14 +20,14 @@ Union Types podem ser um pouco confusos ou complicados, portanto é necessário 
 
     type Cachorro 
     {
-        correr();
-        latir();
+        correr: 'correndo!',
+        latir: 'au au'
     }
 
     type Gato
     {
-        correr();
-        miar();
+        correr: 'correndo!',
+        miar: 'miau'
     }
 
     function getAnimal(): Cachorro | Gato
@@ -36,7 +36,7 @@ Union Types podem ser um pouco confusos ou complicados, portanto é necessário 
     }
 
     let animal1 = getAnimal();
-    animal1.correr(); //o código opera normalmente
-    animal1.latir(); //erro no código
+    animal1.correr; //o código opera normalmente
+    animal1.latir; //erro no código
 
-No exemplo acima, só podemos ter total certezade que o animal, independente de Cachorro ou Gato, possuirá _correr_, já que _correr_ é um método que tanto Cachorro quanto Gato possuem em comum.
+No exemplo acima, só podemos ter total certeza de que o animal, independente de Cachorro ou Gato, possuirá _correr_, já que _correr_ é um método que tanto Cachorro quanto Gato possuem em comum.
