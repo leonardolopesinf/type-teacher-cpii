@@ -1,0 +1,16 @@
+{
+  "name": "tipparametro",
+  "version": "1.0.0",
+  "description": "Abra o `cmd` e se direcione para dentro desta pasta.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",       
+    "start": "tsc -w"       
+  },
+  "author": "Filipe Christovão",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
