@@ -1,0 +1,14 @@
+{
+  "name": "indtipo",
+  "version": "1.0.0",
+  "description": "Exemplo - Indicando Tipos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Filipe Christovão",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
