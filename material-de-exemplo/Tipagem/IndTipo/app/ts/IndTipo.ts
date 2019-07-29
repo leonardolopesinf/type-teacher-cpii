@@ -8,4 +8,9 @@ let x2: any = "oi";
 let y2 = (x2 as string).substring(0, 3);
 
 
-//vale ressaltar que as duas sintaxes apresentadas são equivalentes. Usar um ao invés do outro é apenas uma questão de preferência própria
+//vale ressaltar que as duas sintaxes apresentadas são equivalentes. Usar um ao invés do outro é apenas uma questão de preferência
+
+document.write(y1 + '<br>');
+document.write(typeof (y1) + '<br>');
+document.write(y2 + '<br>');
+document.write(typeof (y2) + '<br>');
