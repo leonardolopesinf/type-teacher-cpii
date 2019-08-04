@@ -1,11 +1,6 @@
 abstract class Turno
 {
-    codigo: number;
-
-    constructor(codigo: number)
-    {
-        this.codigo = codigo;
-    }
+    private codigo: number;
     
     MostrarTurno(): void
     {
@@ -17,13 +12,10 @@ abstract class Turno
 
 class Tarde extends Turno
 {
-    constructor()
-    {
-        super(1234);
-    }
 
     Informacao(): void
     {
         console.log("O turno da tarde inicia ás 12h30 e se encerra ás 18h.")
     }
+
 }

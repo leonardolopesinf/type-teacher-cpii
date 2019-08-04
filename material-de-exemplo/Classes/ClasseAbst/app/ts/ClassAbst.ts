@@ -2,7 +2,7 @@
 
 abstract class Animal
 {
-    nome: string;
+    public nome: string;
 
     constructor(nome:string) 
     {
@@ -12,11 +12,11 @@ abstract class Animal
 
 class Cachorro extends Animal
 {
-    raca: string;
+    public raca: string;
 
     constructor(nome: string, raca: string) //aqui, podemos usar o parâmetro 'nome', pois a classe Cachorro a recebeu por herança
     {
-        super(nome);
+        super(nome); // com o "super" iremos resgatar o constructor da classe "Animal" passando os parametros do cosntructor dentro dos parênteses
         this.raca = raca;
     }
 }

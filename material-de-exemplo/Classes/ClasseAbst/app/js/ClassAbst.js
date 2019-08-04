@@ -4,9 +4,9 @@ class Animal {
         this.nome = nome;
     }
 }
-class Cachorro extends Animal { //aqui, podemos usar o parâmetro 'nome', pois a classe Cachorro a recebeu por herança
+class Cachorro extends Animal {
     constructor(nome, raca) {
-        super(nome);
+        super(nome); // com o "super" iremos resgatar o constructor da classe "Animal" passando os parametros do cosntructor dentro dos parênteses
         this.raca = raca;
     }
 }

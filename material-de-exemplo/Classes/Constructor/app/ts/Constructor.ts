@@ -2,9 +2,9 @@
 
 class Aluno
 {
-    nome: string;
-    idade: number;
-    turma: string;
+    private nome: string;
+    private idade: number;
+    private turma: string;
 
     constructor(nome: string, idade: number, turma: string) //criamos um constructor com os parâmetros 'nome', 'idade' e 'turma'
     {

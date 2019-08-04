@@ -16,4 +16,4 @@ Uma classe abstrata é acionada através da palavra-chave _abstract_. Por exempl
 
 No exemplo acima, _Animal_ é uma classe abstrata e _Cachorro_ é uma classe derivada da classe _Animal_ (denotado através da palavra-chave _extends_, ou seja, o conceito de herança será posto em prática).
 
-Obs: Uma classe abstrata pode ou não ser instanciada diretamente.
+Obs: Uma classe abstrata não pode ser instanciada.
