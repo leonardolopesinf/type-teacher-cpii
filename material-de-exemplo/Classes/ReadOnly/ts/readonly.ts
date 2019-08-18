@@ -1,9 +1,9 @@
-class Octopus {
-    readonly name: string;
-    readonly numberOfLegs: number = 8;
-    constructor (theName: string) {
-        this.name = theName;
+class Pessoa {
+    readonly _cpf: string;
+    constructor (cpf: string) {
+        this._cpf = cpf;
     }
 }
-let dad = new Octopus("Man with the 8 strong legs");
-dad.name = "Man with the 3-piece suit"; // Erro. Name é readonly.
+let rodrigo = new Pessoa("147.258.369-00");
+console.log(rodrigo._cpf);
+rodrigo._cpf = "Man with the 3-piece suit"; // Erro. "_cpf" é um readonly, logo, não é possível alterar seu valor.
