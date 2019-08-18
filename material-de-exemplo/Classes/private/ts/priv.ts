@@ -1,22 +1,19 @@
-class Animal {
-    private name: string;
-    constructor(theName: string) { this.name = theName; }
+class Pessoa {
+    private _cpf: string;
+    constructor(cpf: string) {
+        this._cpf = cpf; 
+    }
 }
 
-class Rhino extends Animal {
-    constructor() { super("Rhino"); }
+class Policial extends Pessoa {
+    constructor(cpf) {
+        super(cpf); 
+    }
+
+    obtemCpf(){
+        return this._cpf; // Não consegue acessar "_cpf" pois o mesmo é privado e apenas Pessoa pode acessa-la.
+    }
 }
 
-class Employee {
-    private name: string;
-    constructor(theName: string) { this.name = theName; }
-}
-
-let animal = new Animal("Goat");
-let rhino = new Rhino();
-let employee = new Employee("Bob");
-
-animal = rhino;
-animal = employee; // Error: 'Animal' and 'Employee' are not compatible
-
-// Como Animal e Rhino compartilham o lado privado de sua forma da mesma declaração de name private: string em Animal, eles são compatíveis. No entanto, esse não é o caso do Employee
+let pessoa = new Pessoa("147.258.369-00");
+console.log(pessoa._cpf); // Não consegue acessar "_cpf" pois o mesmo é privado.
