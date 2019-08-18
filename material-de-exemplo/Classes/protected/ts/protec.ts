@@ -1,24 +1,27 @@
-class Person {
-    protected name:string;
-    constructor(name: string) { this.name = name; }
-}
+class Pessoa {
+    protected _nome:string;
 
-class Employee extends Person {
-    private department: string;
-
-    constructor(name: string, department: string) {
-        super(name);
-        this.department = department;
-    }
-
-    public getElevatorPitch() {
-        return `Hello, my name is ${this.name} and I work in ${this.department}.`;
+    constructor(nome: string) {
+        this._nome = nome;
     }
 }
 
-let howard = new Employee("Howard", "Sales");
-console.log(howard.getElevatorPitch());
-console.log(howard.name); // Erro
+class Funcionario extends Pessoa {
+    private _departamento: string;
+
+    constructor(nome: string, departamento: string) {
+        super(nome);
+        this._departamento = departamento;
+    }
+
+    public cumprimento() {
+        return `Olá, meu nome é ${this._nome} e eu trabalho no ${this._departamento}.`;
+    }
+}
+
+let bob = new Funcionario("Bob", "Vendas");
+console.log(bob.cumprimento());
+console.log(bob._nome); // Erro
 
 
 //Embora não possamos usar o nome de fora da pessoa, ainda podemos usá-lo de dentro de um método de instância do funcionário porque o funcionário deriva da pessoa
