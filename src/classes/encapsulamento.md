@@ -17,7 +17,7 @@ class Pessoa {
 
 ## Private --> APROFUNDAR
 
-Os métodos privados são para ocultar detalhes de implementação de como uma classe funciona para o usuário da classe
+Os métodos privados são para ocultar detalhes de implementação de como uma classe funciona para o usuário da classe, ou seja, o modificador de acesso privado garante que os membros da classe sejam visíveis apenas para essa classe e não estejam acessíveis fora da classe que os contém
 
 ```
 class Conta{
@@ -42,7 +42,7 @@ Class Pessoa {
 
 ## Protected --> APROFUNDAR
 
-Os membros da classe marcados como protegidos só podem ser acessados a partir dos métodos internos da classe ou de seus descendentes.
+Os membros da classe marcados como protegidos só podem ser acessados a partir dos métodos internos da classe ou de seus descendentes. Para dois tipos serem considerados compatíveis, sendo um deles um membro protected, o outro deverá ter um membro protected originado na mesma declaração.
 
 ```
 class Animal extends Stateful {
