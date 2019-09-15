@@ -11,7 +11,10 @@ Contêm apenas a declaração dos membros.
 **Sintaxe**
 
 ```
-interface interface_name { 
+interface nome_da_interface { 
+ 
+ atributo1: string,
+ atributo2: number
 
 }
 ```
