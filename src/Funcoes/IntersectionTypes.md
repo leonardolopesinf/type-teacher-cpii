@@ -7,10 +7,10 @@ interface Estudante {
 }
 
 interface Trabalhador {
-    IDCompany: string;
+    IDcompany: string;
 }
 
-type A = Estutante & Trabalhador;
+type A = Estudante & Trabalhador;
 
 let x: A;
 
